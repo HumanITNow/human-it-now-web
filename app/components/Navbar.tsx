@@ -1,22 +1,46 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+/**
+ * Navbar component
+ * The navbar will be comrpised of 2 main sections:
+ * 1. Logo
+ *  - Custom logo with a div wrapper
+ *    - HI
+ *    - TN
+ * 2. Theme Toggle
+ */
 export default function Navbar() {
     return (
-        <nav className='flex items-center justify-between w-full p-3 bg-secondary-main text-primary-light'>
-            <div className='flex items-center gap-4'>
-                <Link href='/' className='flex items-center'>
-                    <Image src='/logos/small-sq.png' alt='GiftGitr Logo' width={45} height={45} priority />
-                    <span className={`text-4xl pl-5`}>HumanITNow</span>
-                </Link>
-            </div>
-            <div className={`flex gap-4 text-3xl mr-4 font-bold`}>
-                <a href='/' className='hover:text-gray-300'>
-                    Home
-                </a>
-                {/* <a href='/about' className=' hover:text-gray-300'>
-            About
-        </a> */}
+        <nav className='flex items-center justify-between w-full dark:bg-slate-900 bg-slate-50' >
+            <div className='flex items-center justify-between w-full p-4'>
+                <div className='flex items-center justify-between'>
+                    <Link href='/' className='flex items-center justify-between'>
+                        <div className='flex items-center justify-between'>
+                            <div className='relative w-12 h-12'>
+                                <Image
+                                    src='/media/humanitnow!/HumanITNow.png'
+                                    alt='HumanITNow!'
+                                    width={36}
+                                    height={36}
+                                    priority
+                                    className='rounded-full pt-1'
+                                />
+                            </div>
+                            <div className='flex'>
+                                <div className='text-xl font-bold'>
+                                    <span className='border-b-2 ml-2 '>HI</span>
+                                </div>
+                                <div className='text-xl font-bold mt-2'>
+                                    <span className='border-t-2 mr-2'>TN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+                <div className='flex items-center justify-between'>
+                    <button className='p-2 text-xl font-bold'>🌙</button>
+                </div>
             </div>
         </nav>
     );

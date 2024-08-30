@@ -139,15 +139,15 @@ const config: Config = {
         caretColor: ({ theme }) => theme('colors'),
         colors: ({ colors }) => ({
             primary: {
-              main: colors.orange[500],
-              light: colors.orange[300],
-              dark: colors.orange[700],
+              main: colors.blue[700],
+              light: colors.blue[500],
+              dark: colors.blue[950],
               text: colors.white,
             },
             secondary: {
-              main: colors.green[500],
-              light: colors.green[300],
-              dark: colors.green[700],
+              main: colors.slate[500],
+              light: colors.slate[300],
+              dark: colors.slate[700],
               text: colors.white,
             },
             inherit: colors.inherit,
