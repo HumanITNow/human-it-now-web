@@ -12,7 +12,7 @@ import Link from 'next/link';
  */
 export default function Navbar() {
     return (
-        <nav className='flex items-center justify-between w-full dark:bg-slate-900 bg-slate-50' >
+        <nav className='flex items-center justify-between w-full dark:bg-slate-900 bg-slate-50'>
             <div className='flex items-center justify-between w-full p-4'>
                 <div className='flex items-center justify-between'>
                     <Link href='/' className='flex items-center justify-between'>
@@ -29,9 +29,9 @@ export default function Navbar() {
                             </div>
                             <div className='flex'>
                                 <div className='text-xl font-bold'>
-                                    <span className='border-b-2 ml-2 '>HI</span>
+                                    <span className='border-b-2 ml-2'>HI</span>
                                 </div>
-                                <div className='text-xl font-bold mt-2'>
+                                <div className='text-xl font-bold mt-[8px] ml-1'>
                                     <span className='border-t-2 mr-2'>TN</span>
                                 </div>
                             </div>
