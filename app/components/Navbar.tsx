@@ -29,10 +29,12 @@ export default function Navbar() {
                             </div>
                             <div className='flex'>
                                 <div className='text-xl font-bold'>
-                                    <span className='border-b-2 ml-2'>HI</span>
+                                    <span className='border-b-2'>H</span>
+                                    <span className='border-b-2 font-extrabold'>I</span>
                                 </div>
-                                <div className='text-xl font-bold mt-[8px] ml-1'>
-                                    <span className='border-t-2 mr-2'>TN</span>
+                                <div className='text-xl font-bold mt-[8px] ml-[0.1rem]'>
+                                    <span className='border-t-2 font-extrabold'>T</span>
+                                    <span className='border-t-2'>N</span>
                                 </div>
                             </div>
                         </div>
