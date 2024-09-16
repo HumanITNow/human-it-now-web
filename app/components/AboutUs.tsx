@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutUs: React.FC = () => {
+const AboutUs = () => {
     return (
         <div className='bg-gray-100 py-12'>
             <div className='max-w-6xl mx-auto px-4'>
