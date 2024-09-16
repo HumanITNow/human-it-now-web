@@ -3,6 +3,8 @@ import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
 import AboutYou from './components/AboutYou';
 import AboutUs from './components/AboutUs';
+import Projects from './components/Projects';
+import Services from './components/Services';
 
 export default function Home() {
     return (
@@ -33,7 +35,9 @@ export default function Home() {
                     </ul> */}
                 </div>
             </div>
+            <Services />
             <Testimonials />
+            <Projects />
             <AboutYou />
             <AboutUs />
             <Contact />
