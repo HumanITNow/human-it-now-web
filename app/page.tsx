@@ -13,7 +13,7 @@ export default function Home() {
             <div className='flex'>
                 <div className='w-full h-[75vh] relative'>
                     <Image
-                        src='/media/humanitnow!/HumanITNow.png'
+                        src='/media/humanitnow!/pic.jpg'
                         alt='HumanITNow!'
                         layout='fill'
                         objectFit='cover'

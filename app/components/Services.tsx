@@ -2,22 +2,22 @@ import React from 'react';
 
 const testimonials = [
     {
-        name: 'StakeStats.net',
+        name: 'Web Dev',
         text: 'picturespictures',
         image: '/path/to/image1.jpg',
     },
     {
-        name: 'EHS',
+        name: 'Manufacturing Solutions',
         text: 'picturespictures',
         image: '/path/to/image2.jpg',
     },
     {
-        name: 'Ballisics',
+        name: 'Quickbooks Integration',
         text: 'picturespictures',
         image: '/path/to/image2.jpg',
     },
     {
-        name: 'Survently',
+        name: 'Your mom. I service your mom',
         text: 'picturespictures',
         image: '/path/to/image2.jpg',
     },
