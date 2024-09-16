@@ -1,26 +1,27 @@
 import Image from 'next/image';
 import Contact from './components/Contact';
+import Testimonials from './components/Testimonials';
+import AboutYou from './components/AboutYou';
+import AboutUs from './components/AboutUs';
 
 export default function Home() {
     return (
         <div className='flex min-h-screen w-screen flex-col'>
+            
             <div className='flex'>
-                <div className='flex-1'>
+                <div className='w-full h-[75vh] relative'>
                     <Image
                         src='/media/humanitnow!/HumanITNow.png'
                         alt='HumanITNow!'
-                        width={400}
-                        height={400}
+                        layout='fill'
+                        objectFit='cover'
                         priority
-                        // className='animate-pulse'
-                        className='blur-[2px] -rotate-[12deg]'
                     />
-                    {/* <div className=''>... HUMAN IT NOW!!!!!</div> */}
-                    {/* Mimic a call out textbox saying "HUMAN  IT NOW!!!!" */}
-                    <div className='p-4 rounded-lg absolute top-[200px] left-[300px] -rotate-12 w-1/2'>
-                        <div className='text-2xl font-bold'>... HUMAN I.T.</div>
-                        <div className='text-2xl font-bold'>NOW!!!!</div>
-                        {/* <div className='text-2xl font-bold'>NOW!!!!</div> */}
+                    {/* Text overlay */}
+                    <div className='absolute inset-0 flex items-center justify-center'>
+                        <h1 className='text-white text-7xl font-bold text-stroke'>
+                            Welcome to HumanITNow!
+                        </h1>
                     </div>
                 </div>
                 <div className='flex-1 mt-24 text-3xl'>
@@ -32,6 +33,9 @@ export default function Home() {
                     </ul> */}
                 </div>
             </div>
+            <Testimonials />
+            <AboutYou />
+            <AboutUs />
             <Contact />
         </div>
     );
