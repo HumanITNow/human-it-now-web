@@ -4,32 +4,32 @@ const testimonials = [
     {
         name: 'Jason Gesser',
         text: 'HumanITNow provided excellent service and support. Highly recommend!',
-        image: '/path/to/image1.jpg',
+        image: 'media/humanitnow!/HumanITNow.png',
     },
     {
         name: 'Deangelo Casto',
         text: 'The team at HumanITNow is fantastic. They delivered on time and exceeded expectations.',
-        image: '/path/to/image2.jpg',
+        image: 'media/humanitnow!/HumanITNow.png',
     },
     {
         name: 'Devard Darling',
         text: 'Man, these dudes fuckin rule',
-        image: '/path/to/image2.jpg',
+        image: 'media/humanitnow!/HumanITNow.png',
     },
     {
         name: 'Jason Hill',
         text: 'Great stuff from the boys at HumanITnow',
-        image: '/path/to/image2.jpg',
+        image: 'media/humanitnow!/HumanITNow.png',
     },
     {
         name: 'Aaron Baynes',
         text: 'Crikey, I will never hire another software firm',
-        image: '/path/to/image2.jpg',
+        image: 'media/humanitnow!/HumanITNow.png',
     },
     {
         name: 'Chris Ivory',
         text: 'If you are looking for some saints with a reasonable bill, these are your guys',
-        image: '/path/to/image2.jpg',
+        image: 'media/humanitnow!/HumanITNow.png',
     },
     // Add more testimonials as needed
 ];
