@@ -269,6 +269,40 @@ const config: Config = {
             '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
             none: '0 0 #0000',
         },
+        extend: {
+            keyframes: {
+                slide: {
+                    '0%': { clipPath: 'inset(0 100% 0 0)' },
+                    '50%': { clipPath: 'inset(0 0 0 0)' },
+                    '100%': { clipPath: 'inset(0 100% 0 0)' },
+                },
+            },
+            animation: {
+                slide: 'slide 10s infinite',
+            },
+            spacing: {
+                dvh: '100dvh',
+                dvw: '100dvw',
+                min: 'min-content',
+                max: 'max-content',
+                fit: 'fit-content',
+            },
+            willChange: {
+                auto: 'auto',
+                scroll: 'scroll-position',
+                contents: 'contents',
+                transform: 'transform',
+            },
+            zIndex: {
+                auto: 'auto',
+                0: '0',
+                10: '10',
+                20: '20',
+                30: '30',
+                40: '40',
+                50: '50',
+            },
+        },
         fill: ({ theme }) => ({
             none: 'none',
             ...theme('colors'),

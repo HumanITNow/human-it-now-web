@@ -20,10 +20,13 @@ export default function Home() {
                         priority
                     />
                     {/* Text overlay */}
-                    <div className='absolute inset-0 flex items-center justify-center'>
+                    <div className='absolute inset-0 flex flex-col items-center justify-center'>
                         <h1 className='text-white text-7xl font-bold text-stroke'>
                             Welcome to HumanITNow!
                         </h1>
+                        <p className='text-white text-3xl mt-4'>
+                            Your trusted partner in IT solutions
+                        </p>
                     </div>
                 </div>
                 <div className='flex-1 mt-24 text-3xl'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const testimonials = [
     {
@@ -36,24 +37,34 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <div className='py-12'>
-            <h2 className='text-3xl font-bold text-center mb-8'>Testimonials</h2>
-            <div className='max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
-                {testimonials.map((testimonial, index) => (
-                    <div key={index} className='bg-white p-6 rounded-lg shadow-lg'>
-                        <div className='flex items-center mb-4'>
-                            <img
-                                src={testimonial.image}
-                                alt={testimonial.name}
-                                className='w-12 h-12 rounded-full mr-4'
-                            />
-                            <div>
-                                <h3 className='text-xl font-bold'>{testimonial.name}</h3>
+        <div className='relative py-12'>
+            <div className='absolute inset-0'>
+                <Image
+                    src='/media/humanitnow!/pic2.jpg'
+                    alt='Background'
+                    layout='fill'
+                    objectFit='cover'
+                />
+            </div>
+            <div className='relative max-w-6xl mx-auto px-4'>
+                <h2 className='text-3xl font-bold text-center mb-8 text-white'>Testimonials</h2>
+                <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
+                    {testimonials.map((testimonial, index) => (
+                        <div key={index} className='bg-white p-6 rounded-lg shadow-lg'>
+                            <div className='flex items-center mb-4'>
+                                <img
+                                    src={testimonial.image}
+                                    alt={testimonial.name}
+                                    className='w-12 h-12 rounded-full mr-4'
+                                />
+                                <div>
+                                    <h3 className='text-xl font-bold'>{testimonial.name}</h3>
+                                </div>
                             </div>
+                            <p className='text-gray-700'>{testimonial.text}</p>
                         </div>
-                        <p className='text-gray-700'>{testimonial.text}</p>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );
