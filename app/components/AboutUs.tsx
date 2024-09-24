@@ -1,4 +1,5 @@
 import React from 'react';
+import LinkedInProfile from './LinkedInProfile';
 
 const AboutUs = () => {
     return (
@@ -15,6 +16,7 @@ const AboutUs = () => {
                     <p className='text-gray-900 text-lg leading-relaxed'>
                         Join us and experience the difference of working with a team that truly cares about your success. We are here to help you every step of the way.
                     </p>
+                    <LinkedInProfile />
                 </div>
             </div>
         </div>
