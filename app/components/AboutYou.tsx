@@ -18,9 +18,15 @@ const AboutYou = () => {
                     <p className='text-gray-300 text-lg leading-relaxed'>
                         You are someone who values quality and efficiency. You understand the importance of having a reliable software engineering team that can deliver on time and exceed expectations. You are looking for a team that can help you cut through the noise and provide solutions that are tailored to your needs.
                     </p>
-                    <p className='text-gray-300 text-lg leading-relaxed'>
-                        You are tired of automated IT solutions that don't work. You want a team that can provide you with the human touch you need to succeed. You want a team that is dedicated to your success and will go above and beyond to ensure that you achieve your goals. You want a team that truly cares about your success and will work with you every step of the way.
-                    </p>
+                    <div className='flex justify-center items-center'>
+                        <Image
+                            src='/media/humanitnow!/HumanITNow.png' // Replace with your image path
+                            alt='Your Image Description'
+                            width={400} // Adjust the width as needed
+                            height={300} // Adjust the height as needed
+                            className='rounded-lg shadow-lg'
+                        />
+                    </div>
                     <p className='text-gray-300 text-lg leading-relaxed'>
                         You want to focus on your business and not worry about the technical details. You want a team that can handle all of your software engineering needs so that you can focus on what you do best. You want a team that can provide you with high-quality solutions that are tailored to your specific requirements. You want a team that can help you achieve your goals and ensure your success.
                     </p>
