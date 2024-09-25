@@ -4,25 +4,25 @@ import React, { useState, useEffect, useRef } from 'react';
 const projects = [
     {
         name: 'StakeStats.net',
-        text: 'picturespictures',
+        text: 'How many times do you think “It’s RIGGED” when using a betting site? Would you like to see that the games you play are truly fair (the Return to Player values are faithfully enforced)? Use the tools on this site to help you to determine that the games you play on Stake are fair*',
         beforeImage: '/media/humanitnow!/stakeold.png',
         afterImage: '/media/humanitnow!/stakenew.png',
     },
     {
         name: 'EHS',
-        text: 'picturespictures',
+        text: 'A plug and play environmental health and safety solution for all businesses.',
         beforeImage: '/media/humanitnow!/pic3.jpg',
         afterImage: '/media/humanitnow!/pic4.jpg',
     },
     {
         name: 'Ballisics',
-        text: 'picturespictures',
+        text: 'Collecting and reporting on important ballistics data for three of the largest ammunition manufacturers in the world.',
         beforeImage: '/media/humanitnow!/pic5.jpg',
         afterImage: '/media/humanitnow!/pic6.jpg',
     },
     {
         name: 'Survently',
-        text: 'picturespictures',
+        text: 'A subscription-based survey platform that allows you to create and send surveys to your employees or customers. Initally designed to promot servant-leadership.',
         beforeImage: '/media/humanitnow!/pic3.jpg',
         afterImage: '/media/humanitnow!/pic.jpg',
     },
