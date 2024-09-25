@@ -7,24 +7,28 @@ const projects = [
         text: 'How many times do you think “It’s RIGGED” when using a betting site? Would you like to see that the games you play are truly fair (the Return to Player values are faithfully enforced)? Use the tools on this site to help you to determine that the games you play on Stake are fair*',
         beforeImage: '/media/humanitnow!/stakeold.png',
         afterImage: '/media/humanitnow!/stakenew.png',
+        link: 'https://stakestats.net', // Add the link here
     },
     {
         name: 'EHS',
         text: 'A plug and play environmental health and safety solution for all businesses.',
         beforeImage: '/media/humanitnow!/pic3.jpg',
         afterImage: '/media/humanitnow!/pic4.jpg',
+        link: '', // Add the link here
     },
     {
         name: 'Ballisics',
         text: 'Collecting and reporting on important ballistics data for three of the largest ammunition manufacturers in the world.',
         beforeImage: '/media/humanitnow!/pic5.jpg',
         afterImage: '/media/humanitnow!/pic6.jpg',
+        link: '', // Add the link here
     },
     {
         name: 'Survently',
         text: 'A subscription-based survey platform that allows you to create and send surveys to your employees or customers. Initally designed to promot servant-leadership.',
         beforeImage: '/media/humanitnow!/pic3.jpg',
         afterImage: '/media/humanitnow!/pic.jpg',
+        link: '', // Add the link here
     },
     // Add more projects as needed
 ];
@@ -48,6 +52,7 @@ interface project {
     text: string;
     beforeImage: string;
     afterImage: string;
+    link: string;
 }
 
 const ProjectCard = ({ project }: { project: project }) => {
@@ -75,8 +80,14 @@ const ProjectCard = ({ project }: { project: project }) => {
             </div>
             <div className='bg-white bg-opacity-75 p-4 rounded-lg mt-4'>
                 <div className='flex items-center mb-4'>
-                    <div>
-                        <h3 className='text-xl font-bold'>{project.name}</h3>
+                <div>
+                        {project.link ? (
+                            <a href={project.link} className='text-xl font-bold text-gray-900 hover:underline'>
+                                {project.name}
+                            </a>
+                        ) : (
+                            <h3 className='text-xl font-bold'>{project.name}</h3>
+                        )}
                     </div>
                 </div>
                 <p className='text-gray-700'>{project.text}</p>
