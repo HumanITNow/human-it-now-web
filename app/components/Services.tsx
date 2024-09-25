@@ -3,22 +3,22 @@ import React from 'react';
 const testimonials = [
     {
         name: 'Web Dev',
-        text: 'picturespictures',
+        text: 'A business without a website is like a fish without water. We can help you with that.',
         image: '/path/to/image1.jpg',
     },
     {
         name: 'Manufacturing Solutions',
-        text: 'picturespictures',
+        text: 'Needing help with manufacturing solutions? We have a variety of products, from safety systems to QA solutions.',
         image: '/path/to/image2.jpg',
     },
     {
         name: 'Quickbooks Integration',
-        text: 'picturespictures',
+        text: 'Wanting to start using Quickbooks and link it to your website? We have a variety of options for your business.',
         image: '/path/to/image2.jpg',
     },
     {
-        name: 'Your mom. I service your mom',
-        text: 'picturespictures',
+        name: 'Human Support',
+        text: 'Look, we understand what it is like to be a human. We are humans too. We will support you in your human endeavors.',
         image: '/path/to/image2.jpg',
     },
     // Add more testimonials as needed

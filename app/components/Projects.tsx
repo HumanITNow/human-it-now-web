@@ -53,18 +53,18 @@ interface project {
 const ProjectCard = ({ project }: { project: project }) => {
     return (
         <div className='relative p-6 rounded-lg shadow-lg'>
-            <div className='relative w-full h-80 overflow-hidden rounded-lg'>
+            <div className='relative w-full h-96 overflow-hidden rounded-lg'> {/* Increased height */}
                 <img
                     src={project.afterImage}
                     alt={`${project.name} before`}
-                    className='absolute inset-0 w-full h-full object-cover'
+                    className='absolute inset-0 w-full h-full object-cover object-top'
                 />
                 <div className='absolute inset-0 w-full h-full'>
                     <div className='relative h-full'>
                         <img
                             src={project.beforeImage}
                             alt={`${project.name} after`}
-                            className='absolute inset-0 w-full h-full object-cover transition-all duration-[4s] ease-in-out animate-slide'
+                            className='absolute inset-0 w-full h-full object-cover object-top transition-all duration-[4s] ease-in-out animate-slide'
                         />
                         <div className='absolute inset-0 flex justify-between items-center px-4'>
                             <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>Before</span>
