@@ -9,7 +9,6 @@ import Services from './components/Services';
 export default function Home() {
     return (
         <div className='flex min-h-screen w-screen flex-col'>
-            
             <div className='flex'>
                 <div className='w-full h-[75vh] relative'>
                     <Image
@@ -21,12 +20,14 @@ export default function Home() {
                     />
                     {/* Text overlay */}
                     <div className='absolute inset-0 flex flex-col items-center justify-center px-4 text-center'>
-                        <h1 className='text-white text-4xl md:text-7xl font-extrabold text-stroke'>
-                            Welcome to HumanITNow!
-                        </h1>
-                        <p className='text-white text-xl md:text-3xl mt-4 font-semibold'>
-                            Your trusted partner in IT solutions
-                        </p>
+                        <div className='bg-black bg-opacity-50 p-4 rounded'>
+                            <h1 className='text-white text-4xl md:text-7xl font-extrabold'>
+                                Welcome to HumanITNow!
+                            </h1>
+                            <p className='text-white text-xl md:text-3xl mt-4 font-semibold'>
+                                Your trusted partner in IT solutions
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className='flex-1 mt-24 text-3xl'>
