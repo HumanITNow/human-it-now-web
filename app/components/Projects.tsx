@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 
 const projects = [
     {
@@ -7,32 +7,35 @@ const projects = [
         text: 'How many times do you think “It’s RIGGED” when using a betting site? Would you like to see that the games you play are truly fair (the Return to Player values are faithfully enforced)? Use the tools on this site to help you to determine that the games you play on Stake are fair*',
         beforeImage: '/media/humanitnow!/stakeold.png',
         afterImage: '/media/humanitnow!/stakenew.png',
-        link: 'https://stakestats.net', // Add the link here
+        link: 'https://stakestats.net',
+        useSlider: true,
     },
     {
         name: 'EHS',
         text: 'A plug and play environmental health and safety solution for all businesses.',
         beforeImage: '/media/humanitnow!/pic3.jpg',
-        afterImage: '/media/humanitnow!/pic4.jpg',
-        link: '', // Add the link here
+        afterImage: '',
+        link: '',
+        useSlider: false, // Set to false to use a static image
     },
     {
         name: 'Ballisics',
         text: 'Collecting and reporting on important ballistics data for three of the largest ammunition manufacturers in the world.',
         beforeImage: '/media/humanitnow!/pic5.jpg',
         afterImage: '/media/humanitnow!/pic6.jpg',
-        link: '', // Add the link here
+        link: '',
+        useSlider: false,
     },
     {
         name: 'Survently',
         text: 'A subscription-based survey platform that allows you to create and send surveys to your employees or customers. Initally designed to promot servant-leadership.',
         beforeImage: '/media/humanitnow!/survey-before.png',
         afterImage: '/media/humanitnow!/survey-after.png',
-        link: '', // Add the link here
+        link: '',
+        useSlider: true,
     },
     // Add more projects as needed
 ];
-
 
 const Projects = () => {
     return (
@@ -47,40 +50,51 @@ const Projects = () => {
     );
 };
 
-interface project {
+interface Project {
     name: string;
     text: string;
     beforeImage: string;
     afterImage: string;
     link: string;
+    useSlider: boolean;
 }
 
-const ProjectCard = ({ project }: { project: project }) => {
+const ProjectCard = ({ project }: { project: Project }) => {
     return (
         <div className='relative p-6 rounded-lg shadow-lg'>
             <div className='relative w-full h-96 overflow-hidden rounded-lg'> {/* Increased height */}
-                <img
-                    src={project.afterImage}
-                    alt={`${project.name} before`}
-                    className='absolute inset-0 w-full h-full object-cover object-top'
-                />
-                <div className='absolute inset-0 w-full h-full'>
-                    <div className='relative h-full'>
+                {!project.useSlider ? (
+                    <img
+                        src={project.beforeImage}
+                        alt={project.name}
+                        className='absolute inset-0 w-full h-full object-cover object-top'
+                    />
+                ) : (
+                    <>
                         <img
-                            src={project.beforeImage}
+                            src={project.afterImage}
                             alt={`${project.name} after`}
-                            className='absolute inset-0 w-full h-full object-cover object-top transition-all duration-[4s] ease-in-out animate-slide'
+                            className='absolute inset-0 w-full h-full object-cover object-top'
                         />
-                        <div className='absolute inset-0 flex justify-between items-center px-4'>
-                            <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>Before</span>
-                            <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>After</span>
+                        <div className='absolute inset-0 w-full h-full'>
+                            <div className='relative h-full'>
+                                <img
+                                    src={project.beforeImage}
+                                    alt={`${project.name} before`}
+                                    className='absolute inset-0 w-full h-full object-cover object-top transition-all duration-[4s] ease-in-out animate-slide'
+                                />
+                                <div className='absolute inset-0 flex justify-between items-center px-4'>
+                                    <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>Before</span>
+                                    <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>After</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </>
+                )}
             </div>
             <div className='bg-white bg-opacity-75 p-4 rounded-lg mt-4'>
                 <div className='flex items-center mb-4'>
-                <div>
+                    <div>
                         {project.link ? (
                             <a href={project.link} className='text-xl font-bold text-gray-900 hover:underline'>
                                 {project.name}
