@@ -6,6 +6,11 @@
 .pnp.js
 .yarn/install-state.gz
 
+# large media files
+*.gif
+*.mp4
+*.mov
+
 # testing
 /coverage
 
