@@ -8,6 +8,9 @@ dependencies:
   next:
     specifier: 14.2.3
     version: 14.2.3(react-dom@18.3.1)(react@18.3.1)
+  nodemailer:
+    specifier: ^6.9.15
+    version: 6.9.15
   react:
     specifier: ^18
     version: 18.3.1
@@ -22,6 +25,9 @@ devDependencies:
   '@types/node':
     specifier: ^20
     version: 20.16.4
+  '@types/nodemailer':
+    specifier: ^6.4.16
+    version: 6.4.16
   '@types/react':
     specifier: ^18
     version: 18.3.5
@@ -303,6 +309,12 @@ packages:
     resolution: {integrity: sha512-ioyQ1zK9aGEomJ45zz8S8IdzElyxhvP1RVWnPrXDf6wFaUb+kk1tEcVVJkF7RPGM0VWI7cp5U57oCPIn5iN1qg==}
     dependencies:
       undici-types: 6.19.8
+    dev: true
+
+  /@types/nodemailer@6.4.16:
+    resolution: {integrity: sha512-uz6hN6Pp0upXMcilM61CoKyjT7sskBoOWpptkjjJp8jIMlTdc3xG01U7proKkXzruMS4hS0zqtHNkNPFB20rKQ==}
+    dependencies:
+      '@types/node': 20.16.4
     dev: true
 
   /@types/prop-types@15.7.12:
@@ -2013,6 +2025,11 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+    dev: false
+
+  /nodemailer@6.9.15:
+    resolution: {integrity: sha512-AHf04ySLC6CIfuRtRiEYtGEXgRfa6INgWGluDhnxTZhHSKvrBu7lc1VVchQ0d8nPc4cFaZoPq8vkyNoZr0TpGQ==}
+    engines: {node: '>=6.0.0'}
     dev: false
 
   /normalize-path@3.0.0:
