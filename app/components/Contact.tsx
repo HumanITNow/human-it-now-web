@@ -18,10 +18,26 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log('Form data submitted:', formData);
+        try {
+            const response = await fetch('/api/emailer', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log('API response:', data);
+            } else {
+                console.error('Error calling API');
+            }
+        } catch (error) {
+            console.error('Error calling API', error);
+        }
     };
 
     return (
