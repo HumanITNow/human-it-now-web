@@ -3,14 +3,16 @@ import Image from 'next/image';
 
 const testimonials = [
     {
-        name: 'Jason Gesser',
-        text: 'HumanITNow provided excellent service and support. Highly recommend!',
-        image: 'media/humanitnow!/HumanITNow.png',
+        name: 'Ian',
+        text: 'Cary and Jared helped bring my vision to life. They are professional and very dependable. Highly recommend.',
+        image: 'https://media.licdn.com/dms/image/v2/C4E03AQF3bVnVH-bqvg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517354435235?e=1733961600&v=beta&t=PsMtZoCzdU9D_w325H48Zbd-VN_GvufsHYPUZf3hs34',
+        project: 'StakeStats.net',
     },
     {
-        name: 'Deangelo Casto',
+        name: 'Bill',
         text: 'The team at HumanITNow is fantastic. They delivered on time and exceeded expectations.',
-        image: 'media/humanitnow!/HumanITNow.png',
+        image: 'https://media.licdn.com/dms/image/v2/C5103AQGKNHuDVeax4A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516229054331?e=1733961600&v=beta&t=CnoGin_hBXDQa4KTg_osWjQ3tu-eJLNef4DFB6BHss0',
+        project: 'Steele Components and Ammo',
     },
     {
         name: 'Devard Darling',
@@ -50,7 +52,12 @@ const Testimonials = () => {
                 <h2 className='text-3xl font-bold text-center mb-8 text-white'>Testimonials</h2>
                 <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
                     {testimonials.map((testimonial, index) => (
-                        <div key={index} className='bg-white p-6 rounded-lg shadow-lg'>
+                        <a
+                            key={index}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='block bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'
+                        >
                             <div className='flex items-center mb-4'>
                                 <img
                                     src={testimonial.image}
@@ -59,10 +66,11 @@ const Testimonials = () => {
                                 />
                                 <div>
                                     <h3 className='text-xl font-bold'>{testimonial.name}</h3>
+                                    <h4 className='text-md text-gray-500'>{testimonial.project}</h4>
                                 </div>
                             </div>
                             <p className='text-gray-700'>{testimonial.text}</p>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>

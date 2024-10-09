@@ -26,8 +26,8 @@ const projects = [
     {
         name: 'Survently',
         text: 'A subscription-based survey platform that allows you to create and send surveys to your employees or customers. Initally designed to promot servant-leadership.',
-        beforeImage: '/media/humanitnow!/pic3.jpg',
-        afterImage: '/media/humanitnow!/pic.jpg',
+        beforeImage: '/media/humanitnow!/survey-before.png',
+        afterImage: '/media/humanitnow!/survey-after.png',
         link: '', // Add the link here
     },
     // Add more projects as needed
