@@ -13,8 +13,8 @@ const projects = [
     {
         name: 'EHS',
         text: 'A plug and play environmental health and safety solution for all businesses.',
-        beforeImage: '/media/humanitnow!/pic3.jpg',
-        afterImage: '',
+        beforeImage: '/media/humanitnow!/incident1.png',
+        afterImage: '/media/humanitnow!/incident-after.png',
         link: '',
         useSlider: false, // Set to false to use a static image
     },
@@ -65,7 +65,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             <div className='relative w-full h-96 overflow-hidden rounded-lg'> {/* Increased height */}
                 {!project.useSlider ? (
                     <img
-                        src={project.beforeImage}
+                        src={project.afterImage}
                         alt={project.name}
                         className='absolute inset-0 w-full h-full object-cover object-top'
                     />
