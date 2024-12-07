@@ -14,7 +14,7 @@ export default function Home() {
                     <Image
                         src='/media/humanitnow!/pic3.jpg'
                         alt='HumanITNow!'
-                        layout='fill'
+                        fill
                         objectFit='cover'
                         priority
                     />

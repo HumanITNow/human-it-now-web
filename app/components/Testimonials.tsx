@@ -14,26 +14,26 @@ const testimonials = [
         image: 'https://media.licdn.com/dms/image/v2/C5103AQGKNHuDVeax4A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516229054331?e=1733961600&v=beta&t=CnoGin_hBXDQa4KTg_osWjQ3tu-eJLNef4DFB6BHss0',
         project: 'Steele Components and Ammo',
     },
-    {
-        name: 'Devard Darling',
-        text: 'Man, these dudes fuckin rule',
-        image: 'media/humanitnow!/HumanITNow.png',
-    },
-    {
-        name: 'Jason Hill',
-        text: 'Great stuff from the boys at HumanITnow',
-        image: 'media/humanitnow!/HumanITNow.png',
-    },
-    {
-        name: 'Aaron Baynes',
-        text: 'Crikey, I will never hire another software firm',
-        image: 'media/humanitnow!/HumanITNow.png',
-    },
-    {
-        name: 'Chris Ivory',
-        text: 'If you are looking for some saints with a reasonable bill, these are your guys',
-        image: 'media/humanitnow!/HumanITNow.png',
-    },
+    // {
+    //     name: 'Devard Darling',
+    //     text: 'Man, these dudes fuckin rule',
+    //     image: 'media/humanitnow!/HumanITNow.png',
+    // },
+    // {
+    //     name: 'Jason Hill',
+    //     text: 'Great stuff from the boys at HumanITnow',
+    //     image: 'media/humanitnow!/HumanITNow.png',
+    // },
+    // {
+    //     name: 'Aaron Baynes',
+    //     text: 'Crikey, I will never hire another software firm',
+    //     image: 'media/humanitnow!/HumanITNow.png',
+    // },
+    // {
+    //     name: 'Chris Ivory',
+    //     text: 'If you are looking for some saints with a reasonable bill, these are your guys',
+    //     image: 'media/humanitnow!/HumanITNow.png',
+    // },
     // Add more testimonials as needed
 ];
 
@@ -41,12 +41,7 @@ const Testimonials = () => {
     return (
         <div className='relative py-12'>
             <div className='absolute inset-0'>
-                <Image
-                    src='/media/humanitnow!/pic2.jpg'
-                    alt='Background'
-                    layout='fill'
-                    objectFit='cover'
-                />
+                <Image src='/media/humanitnow!/pic2.jpg' alt='Background' fill objectFit='cover' />
             </div>
             <div className='relative max-w-6xl mx-auto px-4'>
                 <h2 className='text-3xl font-bold text-center mb-8 text-white'>Testimonials</h2>
@@ -59,10 +54,12 @@ const Testimonials = () => {
                             className='block bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'
                         >
                             <div className='flex items-center mb-4'>
-                                <img
+                                <Image
                                     src={testimonial.image}
                                     alt={testimonial.name}
-                                    className='w-12 h-12 rounded-full mr-4'
+                                    width={48}
+                                    height={48}
+                                    className='rounded-full mr-4'
                                 />
                                 <div>
                                     <h3 className='text-xl font-bold'>{testimonial.name}</h3>

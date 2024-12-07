@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 const projects = [
     {
@@ -65,23 +66,31 @@ const ProjectCard = ({ project }: { project: Project }) => {
             <div className='relative w-full h-96 overflow-hidden rounded-lg'>
                 {/* Increased height */}
                 {!project.useSlider ? (
-                    <img
+                    <Image
                         src={project.afterImage}
                         alt={project.name}
+                        objectFit='cover'
+                        height={150}
+                        width={150}
                         className='absolute inset-0 w-full h-full object-cover object-top'
                     />
                 ) : (
                     <>
-                        <img
+                        <Image
                             src={project.afterImage}
                             alt={`${project.name} after`}
+                            height={150}
+                            width={150}
                             className='absolute inset-0 w-full h-full object-cover object-top'
                         />
                         <div className='absolute inset-0 w-full h-full'>
                             <div className='relative h-full'>
-                                <img
+                                <Image
                                     src={project.beforeImage}
                                     alt={`${project.name} before`}
+                                    objectFit='cover'
+                                    height={150}
+                                    width={150}
                                     className='absolute inset-0 w-full h-full object-cover object-top transition-all duration-[4s] ease-in-out animate-slide'
                                 />
                                 <div className='absolute inset-0 flex justify-between items-center px-4'>
