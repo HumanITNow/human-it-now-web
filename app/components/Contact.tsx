@@ -50,7 +50,7 @@ const Contact = () => {
     return (
         <div className='relative py-12'>
             <div className='absolute inset-0 w-full h-full'>
-                <Image src='/media/humanitnow!/pic4.jpg' alt='Background' height={150} width={150} objectFit='cover' />
+                <Image src='/media/humanitnow!/pic4.jpg' alt='Background' fill objectFit='cover' />
             </div>
             <div className='relative bg-white text-black dark:bg-secondary-main dark:text-secondary-text bg-opacity-90 dark:bg-opacity-90 p-10 rounded-md w-3/4 mx-auto'>
                 <h3 className='text-center text-2xl font-bold mb-6'>Contact Us Today!</h3>
