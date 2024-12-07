@@ -3,7 +3,7 @@ import LinkedInProfile from './LinkedInProfile';
 
 const AboutUs = () => {
     return (
-        <div className='bg-gray-100 py-12'>
+        <div className='bg-gray-100 text-black dark:bg-secondary-main dark:text-secondary-text py-12'>
             <div className='max-w-6xl mx-auto px-4'>
                 <h2 className='text-3xl font-bold text-center mb-8'>About Us</h2>
                 <div className='grid grid-cols-1 gap-8'>
@@ -21,14 +21,14 @@ const AboutUs = () => {
                     <LinkedInProfile
                         name='Cary Conklin'
                         description='Founder & CEO'
-                        photo='https://media.licdn.com/dms/image/v2/C5603AQECxrJEEskS6Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1656420777840?e=1732752000&v=beta&t=8WXO7kB2TkppRf5mmY4680QMLxRbOHf7RHjObSaaJq0'
-                        link='https://www.linkedin.com/in/caryconklin/' 
+                        photo='https://media.licdn.com/dms/image/v2/C5603AQECxrJEEskS6Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1656420777840?e=1738800000&v=beta&t=I-vA17swbbqCF--Djj-xAsIJx6IkiCFsZWBYApeR7SA'
+                        link='https://www.linkedin.com/in/caryconklin/'
                     />
                     <LinkedInProfile
                         name='Jared Heitzman'
                         description='Senior Software Engineer'
-                        photo='https://media.licdn.com/dms/image/v2/C4E03AQGHWYf_Iuyi8Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575439522258?e=1732752000&v=beta&t=SVkAZVcPXDOA5MTeFMJsll1Dza4BAQjUfA4gmjjq_is' 
-                        link='https://www.linkedin.com/in/jaredheitzman/' 
+                        photo='https://media.licdn.com/dms/image/v2/C4E03AQGHWYf_Iuyi8Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1575439522350?e=1738800000&v=beta&t=HVJMbWOrPeTyqKbwUA1Oo47NTaGhRdA-xJU0DKsh2QM'
+                        link='https://www.linkedin.com/in/jaredheitzman/'
                     />
                 </div>
             </div>

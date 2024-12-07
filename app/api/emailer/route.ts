@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import ContactMessage from '@/types/ContactMessage';
 
 export async function POST(req: NextRequest) {
-    const { name, email, phone, message } = await req.json();
+    const { name, email, phone, preferredContact, aboutYou, message } = await req.json() as ContactMessage;
 
     // Create a transporter object using SMTP transport
     const transporter = nodemailer.createTransport({
@@ -18,7 +19,7 @@ export async function POST(req: NextRequest) {
         from: email,
         to: ['jared@humanitnow.com', 'cary@humanitnow.com'], // Your email address
         subject: `New Contact Form Submission from ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContact}\nAbout the Business: ${aboutYou}\nMessage: ${message}`,
     };
 
     try {

@@ -6,7 +6,7 @@ const AboutYou = () => {
         <div className='relative py-12'>
             <div className='absolute inset-0'>
                 <Image
-                    src='/media/humanitnow!/pic3.jpg'
+                    src='/media/humanitnow!/dark-computer.jpg'
                     alt='Background'
                     layout='fill'
                     objectFit='cover'

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface LinkedInProfileProps {
@@ -10,10 +11,12 @@ interface LinkedInProfileProps {
 const LinkedInProfile: React.FC<LinkedInProfileProps> = ({ name, description, photo, link }) => {
     return (
         <div className='bg-white p-6 rounded-lg shadow-lg'>
-            <img
+            <Image
                 src={photo}
                 alt={`${name}'s LinkedIn Profile`}
-                className='w-32 h-32 rounded-full mx-auto mb-4'
+                width={128}
+                height={128}
+                className='rounded-full mx-auto mb-4'
             />
             <h3 className='text-xl font-bold text-center mb-2'>{name}</h3>
             <p className='text-gray-700 text-center'>

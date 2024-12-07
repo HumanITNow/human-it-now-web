@@ -39,7 +39,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className='bg-gray-100 py-12'>
+        <div className='bg-gray-100 text-black dark:bg-secondary-main dark:text-secondary-text py-12'>
             <h2 className='text-3xl font-bold text-center mb-8'>Latest Projects</h2>
             <div className='max-w-8xl mx-auto px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-2'>
                 {projects.map((project, index) => (
@@ -61,8 +61,9 @@ interface Project {
 
 const ProjectCard = ({ project }: { project: Project }) => {
     return (
-        <div className='relative p-6 rounded-lg shadow-lg'>
-            <div className='relative w-full h-96 overflow-hidden rounded-lg'> {/* Increased height */}
+        <div className='relative p-6 rounded-lg shadow-lg dark:bg-secondary-light dark:text-black'>
+            <div className='relative w-full h-96 overflow-hidden rounded-lg'>
+                {/* Increased height */}
                 {!project.useSlider ? (
                     <img
                         src={project.afterImage}
@@ -84,15 +85,19 @@ const ProjectCard = ({ project }: { project: Project }) => {
                                     className='absolute inset-0 w-full h-full object-cover object-top transition-all duration-[4s] ease-in-out animate-slide'
                                 />
                                 <div className='absolute inset-0 flex justify-between items-center px-4'>
-                                    <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>Before</span>
-                                    <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>After</span>
+                                    <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>
+                                        Before
+                                    </span>
+                                    <span className='text-white text-lg font-bold bg-black bg-opacity-50 px-2 py-1 rounded'>
+                                        After
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </>
                 )}
             </div>
-            <div className='bg-white bg-opacity-75 p-4 rounded-lg mt-4'>
+            <div className='bg-white  bg-opacity-75 p-4 rounded-lg mt-4'>
                 <div className='flex items-center mb-4'>
                     <div>
                         {project.link ? (

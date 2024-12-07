@@ -12,22 +12,18 @@ export default function Home() {
             <div className='flex'>
                 <div className='w-full h-[75vh] relative'>
                     <Image
-                        src='/media/humanitnow!/human1.jpg'
+                        src='/media/humanitnow!/pic3.jpg'
                         alt='HumanITNow!'
                         layout='fill'
                         objectFit='cover'
                         priority
                     />
                     {/* Text overlay */}
-                    <div className='absolute inset-0 flex flex-col items-center justify-center px-4 text-center'>
-                        <div className='bg-black bg-opacity-50 p-4 rounded'>
-                            <h1 className='text-white text-4xl md:text-7xl font-extrabold'>
-                                Welcome to HumanITNow!
-                            </h1>
-                            <p className='text-white text-xl md:text-3xl mt-4 font-semibold'>
-                                Your trusted partner in IT solutions
-                            </p>
-                        </div>
+                    <div className='absolute inset-0 flex flex-col items-center justify-start px-4 my-32'>
+                        <h1 className='text-white text-4xl md:text-7xl font-extrabold'>Welcome to HumanITNow!</h1>
+                        <p className='text-white text-xl md:text-3xl mt-4 font-semibold'>
+                            Your trusted partner in IT solutions
+                        </p>
                     </div>
                 </div>
                 <div className='flex-1 mt-24 text-3xl'>
