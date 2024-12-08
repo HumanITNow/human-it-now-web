@@ -15,11 +15,11 @@ export default function Home() {
                         src='/media/humanitnow!/pic3.jpg'
                         alt='HumanITNow!'
                         fill
-                        objectFit='cover'
+                        className='object-cover object-center'
                         priority
                     />
                     {/* Text overlay */}
-                    <div className='absolute inset-0 flex flex-col items-center justify-start px-4 my-32'>
+                    <div className='w-screen relative text-center px-4 my-32'>
                         <h1 className='text-white text-4xl md:text-7xl font-extrabold'>Welcome to HumanITNow!</h1>
                         <p className='text-white text-xl md:text-3xl mt-4 font-semibold'>
                             Your trusted partner in IT solutions

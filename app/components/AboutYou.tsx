@@ -5,7 +5,7 @@ const AboutYou = () => {
     return (
         <div className='relative py-12'>
             <div className='absolute inset-0'>
-                <Image src='/media/humanitnow!/dark-computer.jpg' alt='Background' fill objectFit='cover' />
+                <Image src='/media/humanitnow!/dark-computer.jpg' alt='Background' fill className='object-cover object-center' />
             </div>
             <div className='relative max-w-6xl mx-auto px-4'>
                 <h2 className='text-3xl font-bold text-center mb-8 text-white'>About You</h2>

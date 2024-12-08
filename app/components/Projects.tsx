@@ -69,7 +69,6 @@ const ProjectCard = ({ project }: { project: Project }) => {
                     <Image
                         src={project.afterImage}
                         alt={project.name}
-                        objectFit='cover'
                         height={150}
                         width={150}
                         className='absolute inset-0 w-full h-full object-cover object-top'
@@ -88,7 +87,6 @@ const ProjectCard = ({ project }: { project: Project }) => {
                                 <Image
                                     src={project.beforeImage}
                                     alt={`${project.name} before`}
-                                    objectFit='cover'
                                     height={150}
                                     width={150}
                                     className='absolute inset-0 w-full h-full object-cover object-top transition-all duration-[4s] ease-in-out animate-slide'
