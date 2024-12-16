@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutYou = () => {
     return (
-        <div className='relative py-12'>
+        <div id='about-you' className='relative py-12'>
             <div className='absolute inset-0'>
                 <Image src='/media/humanitnow!/dark-computer.jpg' alt='Background' fill className='object-cover object-center' />
             </div>

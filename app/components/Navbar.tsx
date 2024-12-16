@@ -3,18 +3,12 @@ import Link from 'next/link';
 
 /**
  * Navbar component
- * The navbar will be comrpised of 2 main sections:
- * 1. Logo
- *  - Custom logo with a div wrapper
- *    - HI
- *    - TN
- * 2. Theme Toggle
  */
 export default function Navbar() {
     return (
-        <nav className='flex items-center justify-between w-full dark:bg-slate-900 bg-slate-50'>
+        <nav className='flex items-center justify-between bg-primary-light dark:bg-transparent'>
             <div className='flex items-center justify-between w-full p-4'>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between w-full'>
                     <Link href='/' className='flex items-center justify-between'>
                         <div className='flex items-center justify-between'>
                             <div className='relative w-12 h-12'>
@@ -39,11 +33,42 @@ export default function Navbar() {
                             </div>
                         </div>
                     </Link>
+                    <div>
+                        <Link className='p-2' href='/services'>
+                            Services
+                        </Link>
+                        <Spacer />
+                        <Link className='p-2' href='/testimonials'>
+                            Testimonials
+                        </Link>
+                        <Spacer />
+                        <Link className='p-2' href='/projects'>
+                            Projects
+                        </Link>
+                        <Spacer />
+                        <Link className='p-2' href='/about-you'>
+                            About You
+                        </Link>
+                        <Spacer />
+                        <Link className='p-2' href='/about-us'>
+                            About Us
+                        </Link>
+                        <Spacer />
+                        <Link className='p-2' href='/questionnaire'>
+                            Questionnaire
+                        </Link>
+                        <Spacer />
+                        <Link className='pl-2' href='/contact'>
+                            Contact
+                        </Link>
+                    </div>
                 </div>
-                <div className='flex items-center justify-between'>
+                {/* <div className='flex items-center justify-between'>
                     <button className='p-2 text-xl font-bold'>🌙</button>
-                </div>
+                </div> */}
             </div>
         </nav>
     );
 }
+
+const Spacer = () => <span className='text-secondary-dark font-bold'>|</span>;

@@ -9,17 +9,17 @@ const services = [
     },
     {
         name: 'Web Dev',
-        text: 'A business without a website is like a fish without water. We can help you with that.',
+        text: 'A business without a website is like a fish without water. We can help you build your web presense, or build internal web based to to interact with you current software systems.',
         image: '/media/humanitnow!/web.png',
     },
     {
         name: 'Manufacturing Solutions',
-        text: 'Needing help with manufacturing solutions? We have a variety of products, from safety systems to QA solutions.',
+        text: `Needing help with manufacturing solutions? We have a variety of pre-built products from safety systems to QA solutions. We can also help improve automation or data collection as we're very adept with OPC solutions.`,
         image: '/media/humanitnow!/factory.jpg',
     },
     {
         name: 'Quickbooks Integration',
-        text: 'Wanting to start using Quickbooks and link it to your website? We have a variety of options for your business.',
+        text: 'Using Quickboos? We can help improve your experience with QuickBooks to make it a little less of the dumpster fire it is.',
         image: '/media/humanitnow!/dollar.png',
     },
     // Add more services as needed
@@ -27,7 +27,7 @@ const services = [
 
 const Services = () => {
     return (
-        <div className='bg-gray-100 text-black dark:bg-secondary-main dark:text-secondary-text py-12'>
+        <div id='services' className='bg-gray-100 text-black dark:bg-secondary-dark dark:text-secondary-text py-12'>
             <h2 className='text-3xl font-bold text-center mb-8'>Services</h2>
             <div className='max-w-8xl mx-auto px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-2'>
                 {services.map((service, index) => (

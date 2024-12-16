@@ -2,23 +2,23 @@ import React from 'react';
 import LinkedInProfile from './LinkedInProfile';
 
 const AboutUs = () => (
-    <div className='bg-gray-100 text-black dark:bg-secondary-main dark:text-secondary-text py-12'>
+    <div id='about-us' className='bg-secondary-light text-secondary-text dark:bg-secondary-dark dark:text-secondary-text py-12'>
         <div className='max-w-6xl mx-auto px-4'>
             <h2 className='text-3xl font-bold text-center mb-8'>About Us</h2>
             <div className='grid grid-cols-1 gap-8'>
-                <div className='text-gray-900 text-lg leading-relaxed break-words'>
+                <div className='text-lg leading-relaxed break-words'>
                     We are a team of dedicated professionals who are passionate about helping businesses succeed. Our
                     team has years of experience in software development, web design, and digital marketing. We have
                     worked with clients from a variety of industries and have helped them achieve their goals. Our team
                     is committed to providing high-quality solutions that meet your specific needs and exceed your
                     expectations.
                 </div>
-                <div className='text-gray-900 text-lg leading-relaxed break-words'>
+                <div className='text-lg leading-relaxed break-words'>
                     At HumanITNow, we understand your needs and are here to provide the support and expertise you
                     require. Our team is dedicated to delivering high-quality solutions that meet your specific
                     requirements. We are committed to helping you achieve your goals and ensuring your success.
                 </div>
-                <div className='text-gray-900 text-lg leading-relaxed break-words'>
+                <div className='text-lg leading-relaxed break-words'>
                     Join us and experience the difference of working with a team that truly cares about your success. We
                     are here to help you every step of the way.
                 </div>

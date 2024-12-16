@@ -44,12 +44,13 @@ const testimonials: Testimonial[] = [
 
 const Testimonials = () => {
     return (
-        <div className='relative py-12'>
+        <div id='testimonials' className='relative py-12'>
             <div className='absolute inset-0'>
                 <Image src='/media/humanitnow!/pic2.jpg' alt='Background' fill className='object-cover object-center' />
             </div>
             <div className='relative mx-auto px-4'>
                 <h2 className='text-3xl font-bold text-center mb-8 text-white'>Testimonials</h2>
+                <span className='italic'>*Real customer who were NOT paid for their testimonials</span>
                 <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
                     {testimonials.map((testimonial, index) => (
                         <a

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Nunito_Sans } from 'next/font/google';
+import { Roboto_Mono as Font } from 'next/font/google';
 import './globals.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
-const font = Nunito_Sans({ subsets: ['latin'] });
+const font = Font({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
     title: 'HumanITNow',

@@ -48,7 +48,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='relative py-12'>
+        <div id='contact' className='relative py-12'>
             <div className='absolute inset-0 w-full h-full'>
                 <Image src='/media/humanitnow!/pic4.jpg' alt='Background' fill className='object-cover object-center' />
             </div>

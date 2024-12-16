@@ -29,7 +29,7 @@ const projects = [
     },
     {
         name: 'Survently',
-        text: 'A subscription-based survey platform that allows you to create and send surveys to your employees or customers. Initally designed to promot servant-leadership.',
+        text: 'A subscription-based survey platform that allows you to create and send surveys to your employees or customers. Initally designed to promote servant-leadership.',
         beforeImage: '/media/humanitnow!/survey-before.png',
         afterImage: '/media/humanitnow!/survey-after.png',
         link: '',
@@ -40,7 +40,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className='bg-gray-100 text-black dark:bg-secondary-main dark:text-secondary-text py-12'>
+        <div id='projects' className='bg-gray-100 text-black dark:bg-secondary-dark dark:text-secondary-text py-12'>
             <h2 className='text-3xl font-bold text-center mb-8'>Latest Projects</h2>
             <div className='max-w-8xl mx-auto px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-2'>
                 {projects.map((project, index) => (
@@ -62,7 +62,7 @@ interface Project {
 
 const ProjectCard = ({ project }: { project: Project }) => {
     return (
-        <div className='relative p-6 rounded-lg shadow-lg dark:bg-secondary-light dark:text-black'>
+        <div className='relative p-6 rounded-lg shadow-lg dark:bg-gray-300 dark:text-black'>
             <div className='relative w-full h-96 overflow-hidden rounded-lg'>
                 {/* Increased height */}
                 {!project.useSlider ? (
