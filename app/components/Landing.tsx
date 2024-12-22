@@ -16,7 +16,7 @@ export default function LandingPage() {
                 className='object-cover object-center'
                 priority
             />
-            <div className='flex w-full'>
+            <div className='flex flex-col lg:flex-row w-full'>
                 <Welcome />
                 <Promises />
             </div>
@@ -27,16 +27,16 @@ export default function LandingPage() {
 const Welcome = () => (
     <div className='p-6'>
         <h1 className='text-6xl relative font-extrabold text-left w-fit'>Welcome to HumanITNow!</h1>
-        <h2 className='relative top-[-0.6rem] font-semibold text-left text-secondary-main italic'>
+        <h2 className='relative top-[-0.3rem] font-semibold text-left text-secondary-main italic'>
             The tech guys who hate where tech has lead us
         </h2>
     </div>
 );
 
 const Promises = () => (
-    <div className='relative'>
+    <div className='relative p-6'>
         <p className='text-white text-xl md:text-2xl mt-4 font-semibold'>Our Promise To You:</p>
-        <ol className='max-w-2/3 flex flex-col items-center pr-16'>
+        <ol className='max-w-2/3 flex flex-col items-center pr-1 md:pr-16'>
             {promises.map((p, i) => (
                 <li key={i} className='py-2 text-xl max-w-screen-md w-full text-justify'>
                     {p}
