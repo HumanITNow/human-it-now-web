@@ -9,13 +9,13 @@ const promises = [
 export default function LandingPage() {
     return (
         <div className='w-full min-h-[90vh] relative'>
-            {/* <Image
+            <Image
                 src='/media/humanitnow!/pic3.jpg'
                 alt='HumanITNow!'
                 fill
                 className='object-cover object-center'
                 priority
-            /> */}
+            />
             <div className='flex flex-col md:flex-row w-full py-10 p-3 sm:pr-8 md:pr-16'>
                 <Welcome />
                 <Promises />
