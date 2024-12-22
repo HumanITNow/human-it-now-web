@@ -155,7 +155,7 @@ const Links = () => (
             Questionnaire
         </Link>
         <Spacer />
-        <Link className='pl-2' href='/contact'>
+        <Link className='p-2' href='/contact'>
             Contact
         </Link>
     </>
