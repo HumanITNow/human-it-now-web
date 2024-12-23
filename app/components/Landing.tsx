@@ -16,7 +16,7 @@ export default function LandingPage() {
                 className='object-cover object-center'
                 priority
             />
-            <div className='flex flex-col md:flex-row w-full py-10 p-3 sm:pr-8 md:pr-16'>
+            <div className='flex flex-col md:flex-row w-full py-10 p-3 sm:pr-8 md:pr-16 text-primary-text'>
                 <Welcome />
                 <Promises />
             </div>

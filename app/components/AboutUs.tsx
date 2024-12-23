@@ -2,7 +2,7 @@ import React from 'react';
 import LinkedInProfile from './LinkedInProfile';
 
 const AboutUs = () => (
-    <div id='about-us' className='bg-secondary-light text-secondary-text dark:bg-secondary-dark dark:text-secondary-text py-12'>
+    <div id='about-us' className='dark:bg-secondary-dark dark:text-secondary-text py-12'>
         <div className='max-w-6xl mx-auto px-4'>
             <h2 className='text-3xl font-bold text-center mb-8'>About Us</h2>
             <div className='grid grid-cols-1 gap-8'>

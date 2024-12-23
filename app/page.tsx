@@ -9,7 +9,7 @@ import LandingPage from './components/Landing';
 
 export default function Home() {
     return (
-        <div className='flex min-h-screen w-full flex-col m-0 p-0'>
+        <div className='flex min-h-screen w-full flex-col m-0 p-0 bg-primary-text text-primary-dark dark:bg-primary-dark dark:text-primary-text'>
             <LandingPage />
             <Services />
             <Testimonials />
